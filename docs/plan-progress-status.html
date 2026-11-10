@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><title>Tiến độ dự án – Lab 3</title>
+<style>
+body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 1100px; margin: 2rem auto; padding: 0 1rem; color: #1f2328; }
+table { border-collapse: collapse; width: 100%; } th, td { border: 1px solid #d0d7de; padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: #f6f8fa; } code { background: #f6f8fa; padding: 1px 4px; border-radius: 4px; }
+</style></head><body>
+<h1>Tiến độ dự án</h1>
+<p>Mỗi bước làm xong sẽ dừng lại để nhóm kiểm tra trước khi sang bước tiếp theo.</p>
+<table>
+<thead>
+<tr>
+  <th>#</th>
+  <th>Bước</th>
+  <th>Sản phẩm</th>
+  <th>Trạng thái</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>Khởi tạo cấu trúc thư mục, môi trường, tải dữ liệu</td>
+  <td>Cây thư mục, <code>.venv</code>, <code>requirements.txt</code>, <code>data/raw/</code></td>
+  <td>Xong, nhóm đã duyệt</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>Bài 1: phân tích cảm xúc</td>
+  <td><code>src/01_sentiment_analysis.py</code>, test, phần Bài 1 trong <code>docs/model.md</code></td>
+  <td>Xong, nhóm đã duyệt</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>Bài 2 – dữ liệu: chia, làm sạch, kiểm tra trùng</td>
+  <td><code>src/lab3/data.py</code>, test, <code>docs/data.md</code></td>
+  <td>Xong, nhóm đã duyệt</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>Bài 2 – baseline TF-IDF + LogisticRegression (5-fold)</td>
+  <td><code>src/lab3/baseline.py</code>, test, phần A của <code>docs/training.md</code></td>
+  <td>Xong, nhóm đã duyệt</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>Bài 2 – fine-tune DistilBERT (chạy thử → chạy đầy đủ)</td>
+  <td><code>src/lab3/train.py</code>, <code>--stage train</code>, test, phần B của <code>docs/training.md</code></td>
+  <td>Xong (1 giờ 11 phút, validation accuracy 0,9073), nhóm đã duyệt</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>Bài 2 – đánh giá</td>
+  <td><code>src/lab3/final_evaluation.py</code>, <code>src/lab3/plots.py</code>, <code>--stage evaluate</code>, test, <code>outputs/reports/</code>, <code>docs/evaluation.md</code></td>
+  <td>Xong (test accuracy 0,9145), nhóm đã duyệt</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>Dự đoán câu mới</td>
+  <td><code>src/lab3/predict.py</code>, <code>src/03_predict_finetuned.py</code>, test, <code>docs/demo.md</code></td>
+  <td>Xong, nhóm đã duyệt</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>Notebook tổng hợp</td>
+  <td><code>notebooks/Practice3_HuggingFace_Final.ipynb</code> (đã chạy sẵn kết quả) + bản <code>.html</code>, <code>tests/test_notebook.py</code></td>
+  <td>Xong, chờ nhóm duyệt</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td>Báo cáo và đóng gói</td>
+  <td><code>REPORT.md</code>, <code>AI_Usage.md</code>, <code>README.md</code>, <code>docs/MONITORS_DIAGRAM.md</code>, bản HTML của file này, file zip</td>
+  <td>Xong, chờ nhóm duyệt</td>
+</tr>
+</tbody>
+</table>
+
+<p><em>Tạo tự động từ <code>docs/plan-progress-status.md</code>.</em></p>
+</body></html>

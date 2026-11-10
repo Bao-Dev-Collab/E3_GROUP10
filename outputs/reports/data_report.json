@@ -1,0 +1,73 @@
+{
+  "seed": 42,
+  "val_size": 0.1,
+  "raw_rows": {
+    "train": 25000,
+    "test": 25000
+  },
+  "empty_after_cleaning_removed": {
+    "train": 0,
+    "validation": 0,
+    "test": 0
+  },
+  "duplicates": {
+    "train_internal_duplicates_removed": 76,
+    "train_conflicting_labels_removed": 0,
+    "validation_internal_duplicates_removed": 2,
+    "validation_conflicting_labels_removed": 0,
+    "train_also_in_test_removed": 107,
+    "train_also_in_validation_removed": 20,
+    "validation_also_in_test_removed": 16,
+    "test_internal_duplicates_kept": 201
+  },
+  "final_rows": {
+    "train": 22297,
+    "validation": 2482,
+    "test": 25000
+  },
+  "label_counts": {
+    "train": {
+      "0": 11100,
+      "1": 11197
+    },
+    "validation": {
+      "0": 1236,
+      "1": 1246
+    },
+    "test": {
+      "0": 12500,
+      "1": 12500
+    }
+  },
+  "train_token_length": {
+    "count": 22297,
+    "mean": 297.98484101000133,
+    "median": 222.0,
+    "p90": 584.0,
+    "p95": 762.0,
+    "max": 3047,
+    "fraction_longer_than": {
+      "128": 0.8794905144189802,
+      "256": 0.4118939767681751,
+      "512": 0.13360541776920662
+    }
+  },
+  "files": {
+    "train": {
+      "path": "/Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/data/splits/train.csv",
+      "rows": 22297,
+      "sha256": "b65b83e242b44a4df9bac95cdf27fb112186759816dfb4b309574f8391d2de5b"
+    },
+    "validation": {
+      "path": "/Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/data/splits/validation.csv",
+      "rows": 2482,
+      "sha256": "ad342b1d210bf9de5474bae1ba282b5fb69f1adba716a36970505f1d33a5bc4f"
+    },
+    "test": {
+      "path": "/Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/data/splits/test.csv",
+      "rows": 25000,
+      "sha256": "a81e7391d7a66ed215a577641e434570686178d21fa52998f466de619ef78396"
+    }
+  },
+  "tokenizer": "distilbert/distilbert-base-uncased"
+}

@@ -1,0 +1,85 @@
+{
+  "mode": "smoke",
+  "model_name": "distilbert/distilbert-base-uncased",
+  "device": "mps",
+  "n_train": 480,
+  "n_validation": 256,
+  "hyperparameters": {
+    "max_length": 256,
+    "num_epochs": 2,
+    "learning_rate": 2e-05,
+    "train_batch_size": 16,
+    "gradient_accumulation_steps": 1,
+    "effective_batch_size": 16,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "eval_steps": 30,
+    "early_stopping_patience": 2,
+    "metric_for_best_model": "accuracy",
+    "seed": 42
+  },
+  "train_runtime_seconds": 52.8935,
+  "train_loss": 0.6929320653279623,
+  "global_steps": 30,
+  "validation_metrics": {
+    "accuracy": 0.5703125,
+    "precision": 0.7777777777777778,
+    "recall": 0.06086956521739131,
+    "f1": 0.11290322580645161,
+    "loss": 0.6797571778297424
+  },
+  "eval_samples_per_second": 42.141,
+  "log_history": [
+    {
+      "loss": 0.6929320653279623,
+      "grad_norm": 0.9654765129089355,
+      "learning_rate": 7.407407407407407e-07,
+      "epoch": 1.0,
+      "step": 30
+    },
+    {
+      "eval_loss": 0.6797571778297424,
+      "eval_accuracy": 0.5703125,
+      "eval_precision": 0.7777777777777778,
+      "eval_recall": 0.06086956521739131,
+      "eval_f1": 0.11290322580645161,
+      "eval_runtime": 6.489,
+      "eval_samples_per_second": 39.452,
+      "eval_steps_per_second": 0.616,
+      "epoch": 1.0,
+      "step": 30
+    },
+    {
+      "train_runtime": 52.8935,
+      "train_samples_per_second": 9.075,
+      "train_steps_per_second": 0.567,
+      "total_flos": 31792175677440.0,
+      "train_loss": 0.6929320653279623,
+      "epoch": 1.0,
+      "step": 30
+    },
+    {
+      "eval_loss": 0.6797571778297424,
+      "eval_accuracy": 0.5703125,
+      "eval_precision": 0.7777777777777778,
+      "eval_recall": 0.06086956521739131,
+      "eval_f1": 0.11290322580645161,
+      "eval_runtime": 6.0749,
+      "eval_samples_per_second": 42.141,
+      "eval_steps_per_second": 0.658,
+      "epoch": 1.0,
+      "step": 30
+    }
+  ],
+  "train_steps_per_second": 0.7196874414703354,
+  "wall_seconds": 59.69837345904671,
+  "estimate_full_run": {
+    "total_update_steps": 2788.0,
+    "train_seconds": 3873.903919045832,
+    "validation_seconds": 235.59004295104532,
+    "train_eval_seconds": 529.1046724092927,
+    "total_seconds": 4638.59863440617
+  },
+  "within_time_budget": true
+}

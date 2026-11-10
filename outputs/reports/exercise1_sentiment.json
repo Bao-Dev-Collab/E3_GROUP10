@@ -1,0 +1,146 @@
+{
+  "model": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "device": "mps",
+  "transformers_version": "5.22.2",
+  "torch_version": "2.15.0",
+  "max_length": 512,
+  "model_info": {
+    "architecture": "DistilBertForSequenceClassification",
+    "num_parameters": 66955010,
+    "id2label": {
+      "0": "NEGATIVE",
+      "1": "POSITIVE"
+    },
+    "model_max_length": 512
+  },
+  "tokenization_example": {
+    "text": "I absolutely loved this movie, the cinematography was breathtaking!",
+    "tokens": [
+      "[CLS]",
+      "i",
+      "absolutely",
+      "loved",
+      "this",
+      "movie",
+      ",",
+      "the",
+      "cinematography",
+      "was",
+      "breath",
+      "##taking",
+      "!",
+      "[SEP]"
+    ],
+    "input_ids": [
+      101,
+      1045,
+      7078,
+      3866,
+      2023,
+      3185,
+      1010,
+      1996,
+      16434,
+      2001,
+      3052,
+      17904,
+      999,
+      102
+    ],
+    "attention_mask": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "predictions_manual": [
+    {
+      "label": "POSITIVE",
+      "label_id": 1,
+      "score": 0.9998862743377686,
+      "logits": [
+        -4.3621954917907715,
+        4.719067573547363
+      ],
+      "probabilities": {
+        "NEGATIVE": 0.00011376492329873145,
+        "POSITIVE": 0.9998862743377686
+      },
+      "text": "I absolutely loved this movie, the cinematography was breathtaking!",
+      "num_tokens": 14
+    },
+    {
+      "label": "NEGATIVE",
+      "label_id": 0,
+      "score": 0.9998089671134949,
+      "logits": [
+        4.750975608825684,
+        -3.8115689754486084
+      ],
+      "probabilities": {
+        "NEGATIVE": 0.9998089671134949,
+        "POSITIVE": 0.00019109576533082873
+      },
+      "text": "The plot was predictable and the acting felt painfully wooden.",
+      "num_tokens": 13
+    },
+    {
+      "label": "POSITIVE",
+      "label_id": 1,
+      "score": 0.997532844543457,
+      "logits": [
+        -2.947638750076294,
+        3.0545718669891357
+      ],
+      "probabilities": {
+        "NEGATIVE": 0.002467176876962185,
+        "POSITIVE": 0.997532844543457
+      },
+      "text": "The film was not bad at all.",
+      "num_tokens": 10
+    }
+  ],
+  "predictions_pipeline": [
+    {
+      "text": "I absolutely loved this movie, the cinematography was breathtaking!",
+      "label": "POSITIVE",
+      "score": 0.9998862743377686,
+      "probabilities": {
+        "NEGATIVE": 0.00011376492329873145,
+        "POSITIVE": 0.9998862743377686
+      }
+    },
+    {
+      "text": "The plot was predictable and the acting felt painfully wooden.",
+      "label": "NEGATIVE",
+      "score": 0.9998089671134949,
+      "probabilities": {
+        "NEGATIVE": 0.9998089671134949,
+        "POSITIVE": 0.00019109557615593076
+      }
+    },
+    {
+      "text": "The film was not bad at all.",
+      "label": "POSITIVE",
+      "score": 0.997532844543457,
+      "probabilities": {
+        "NEGATIVE": 0.002467176876962185,
+        "POSITIVE": 0.997532844543457
+      }
+    }
+  ],
+  "max_probability_difference": 1.8917489796876907e-10,
+  "labels_match": true,
+  "tolerance": 0.0001
+}

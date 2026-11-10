@@ -1,0 +1,22 @@
+W1109 20:39:28.730000 19035 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/104 [00:00<?, ?it/s]Loading weights: 100%|██████████| 104/104 [00:00<00:00, 32067.02it/s]
+  Đã dự đoán 3,200/25,000 review
+  Đã dự đoán 6,400/25,000 review
+  Đã dự đoán 9,600/25,000 review
+  Đã dự đoán 12,800/25,000 review
+  Đã dự đoán 16,000/25,000 review
+  Đã dự đoán 19,200/25,000 review
+  Đã dự đoán 22,400/25,000 review
+
+KẾT QUẢ TRÊN TẬP TEST (25,000 review, max_length=256):
+  DistilBERT                : accuracy 0.9145 | precision 0.9063 | recall 0.9246 | F1 0.9153
+  Baseline TF-IDF + LogReg  : accuracy 0.9032 | precision 0.9030 | recall 0.9034 | F1 0.9032
+  Theo độ dài review:
+    Không bị cắt (≤ 256 token)   (14,973 review): DistilBERT 0.9347 | Baseline TF-IDF + LogReg 0.9050
+    Bị cắt (> 256 token)         (10,027 review): DistilBERT 0.8842 | Baseline TF-IDF + LogReg 0.9004
+    Tất cả                       (25,000 review): DistilBERT 0.9145 | Baseline TF-IDF + LogReg 0.9032
+  Hai model cùng đúng / chỉ DistilBERT đúng / chỉ baseline đúng / cùng sai: 21,389 / 1,473 / 1,190 / 948
+  Đã lưu confusion_matrices: /Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/outputs/reports/confusion_matrices.png
+  Đã lưu training_curves: /Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/outputs/reports/training_curves.png
+  Đã lưu test_predictions: /Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/outputs/reports/test_predictions.csv
+Đã lưu báo cáo: /Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/outputs/reports/evaluation_report.json

@@ -1,0 +1,61 @@
+{
+  "model_dir": "/Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/outputs/final_model",
+  "max_length": 256,
+  "predictions": [
+    {
+      "text": "One of the best films I have seen in years. The acting and the soundtrack are wonderful.",
+      "label": "POSITIVE",
+      "confidence": 0.9962466359138489,
+      "probabilities": {
+        "NEGATIVE": 0.0037533447612076998,
+        "POSITIVE": 0.9962466359138489
+      },
+      "num_tokens": 21,
+      "truncated": false
+    },
+    {
+      "text": "A complete waste of two hours. The plot makes no sense and the dialogue is painful.",
+      "label": "NEGATIVE",
+      "confidence": 0.9963783621788025,
+      "probabilities": {
+        "NEGATIVE": 0.9963783621788025,
+        "POSITIVE": 0.003621599404141307
+      },
+      "num_tokens": 20,
+      "truncated": false
+    },
+    {
+      "text": "It's not a bad movie at all, I actually enjoyed it more than I expected.",
+      "label": "POSITIVE",
+      "confidence": 0.9918556213378906,
+      "probabilities": {
+        "NEGATIVE": 0.008144375868141651,
+        "POSITIVE": 0.9918556213378906
+      },
+      "num_tokens": 21,
+      "truncated": false
+    },
+    {
+      "text": "Oh great, another sequel nobody asked for. Just what we needed.",
+      "label": "POSITIVE",
+      "confidence": 0.5856764912605286,
+      "probabilities": {
+        "NEGATIVE": 0.4143235385417938,
+        "POSITIVE": 0.5856764912605286
+      },
+      "num_tokens": 16,
+      "truncated": false
+    },
+    {
+      "text": "The first half is slow and boring, but the ending is absolutely brilliant.",
+      "label": "POSITIVE",
+      "confidence": 0.9920151233673096,
+      "probabilities": {
+        "NEGATIVE": 0.007984866388142109,
+        "POSITIVE": 0.9920151233673096
+      },
+      "num_tokens": 17,
+      "truncated": false
+    }
+  ]
+}

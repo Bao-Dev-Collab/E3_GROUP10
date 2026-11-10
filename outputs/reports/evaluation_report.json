@@ -1,0 +1,164 @@
+{
+  "n_test": 25000,
+  "max_length": 256,
+  "device": "mps",
+  "metrics": {
+    "DistilBERT": {
+      "accuracy": 0.91448,
+      "precision": 0.9062892095357591,
+      "recall": 0.92456,
+      "f1": 0.9153334389355299,
+      "count": 25000
+    },
+    "Baseline TF-IDF + LogReg": {
+      "accuracy": 0.90316,
+      "precision": 0.9029988004798081,
+      "recall": 0.90336,
+      "f1": 0.9031793641271746,
+      "count": 25000
+    }
+  },
+  "confusion_matrices": {
+    "labels": [
+      "NEGATIVE",
+      "POSITIVE"
+    ],
+    "DistilBERT": [
+      [
+        11305,
+        1195
+      ],
+      [
+        943,
+        11557
+      ]
+    ],
+    "Baseline TF-IDF + LogReg": [
+      [
+        11287,
+        1213
+      ],
+      [
+        1208,
+        11292
+      ]
+    ]
+  },
+  "accuracy_by_length": [
+    {
+      "group": "Không bị cắt (≤ 256 token)",
+      "count": 14973,
+      "DistilBERT": 0.9347492152541241,
+      "Baseline TF-IDF + LogReg": 0.9050290522941294
+    },
+    {
+      "group": "Bị cắt (> 256 token)",
+      "count": 10027,
+      "DistilBERT": 0.8842126259100429,
+      "Baseline TF-IDF + LogReg": 0.9003690036900369
+    },
+    {
+      "group": "Tất cả",
+      "count": 25000,
+      "DistilBERT": 0.91448,
+      "Baseline TF-IDF + LogReg": 0.90316
+    }
+  ],
+  "agreement": {
+    "both_correct": 21389,
+    "only_distilbert_correct": 1473,
+    "only_baseline_correct": 1190,
+    "both_wrong": 948
+  },
+  "most_confident_errors_distilbert": {
+    "NEGATIVE -> POSITIVE": [
+      {
+        "row": 12061,
+        "confidence": 0.9967934489250183,
+        "text_preview": "This movie was pure genius. John Waters is brilliant. It is hilarious and I am not sick of it even after seeing it about 20 times since I bought it a few months ago. The acting is great, although Ricki Lake could have been better. And Johnny Depp is magnificent. He is such a beautiful man and a very…",
+        "source_index": 12061,
+        "token_length": 100,
+        "baseline_prediction": "POSITIVE"
+      },
+      {
+        "row": 4118,
+        "confidence": 0.9966262578964233,
+        "text_preview": "This is definitely one of the best Kung fu movies in the history of Cinema. The screenplay is really well done (which is not often the case for this type of movies) and you can see that Chuck (in one of his first role)is a great actor. The final fight with the sherif deputy in the bullring is a mast…",
+        "source_index": 4118,
+        "token_length": 73,
+        "baseline_prediction": "POSITIVE"
+      },
+      {
+        "row": 7109,
+        "confidence": 0.9963938593864441,
+        "text_preview": "This has to be one of, if not THE greatest Mob/Crime films of all time. Every thing about this movie is great, the acting in this film is of true quality; Master P's acting skills make you actually believe he is Italian! The cinematography is excellent too, probably the best ever. This movie was gre…",
+        "source_index": 7109,
+        "token_length": 80,
+        "baseline_prediction": "POSITIVE"
+      },
+      {
+        "row": 6888,
+        "confidence": 0.9963595271110535,
+        "text_preview": "In a not totally successful attempt to be taken seriously, and move into 'adult' films, Mr. Hughes gives us this film about a young married couple. True, it's got every cliche in the book in it, silly fantasy stuff and all that, but more importantly- it's got Elizabeth McGovern. Clearly the best act…",
+        "source_index": 6888,
+        "token_length": 260,
+        "baseline_prediction": "POSITIVE"
+      },
+      {
+        "row": 6274,
+        "confidence": 0.9963496923446655,
+        "text_preview": "All in all, don't expect much and you won't be disappointed. And if you want to see a movie that will take you back to 1983, this will do that for sure. The only reason I gave this movie 2 points more than it deserves is for 2 reasons: #1. Michael Caine #2. the people, the sights, the culture and th…",
+        "source_index": 6274,
+        "token_length": 487,
+        "baseline_prediction": "POSITIVE"
+      }
+    ],
+    "POSITIVE -> NEGATIVE": [
+      {
+        "row": 20409,
+        "confidence": 0.997177243232727,
+        "text_preview": "Forget everything that you have ever read about the Mallachi Brothers' straight-to-video release \"Snakes on a Train,\" especially if it was a negative review. This movie is way more fun than the movie that it obviously rips off: \"Snakes on a Plane.\" Frankly, I am surprised that more people aren't rha…",
+        "source_index": 20409,
+        "token_length": 892,
+        "baseline_prediction": "NEGATIVE"
+      },
+      {
+        "row": 19824,
+        "confidence": 0.9971386194229126,
+        "text_preview": "Jack Frost 2, is probably the most cheesiest movie I have ever seen in my life. The complete title of the film, is Jack Frost 2: Revenge of the Mutant Killer Snowman. Horror movie fans that have a taste for campy story lines, will be delighted to watch this. This film was straight to video, and for …",
+        "source_index": 19824,
+        "token_length": 445,
+        "baseline_prediction": "NEGATIVE"
+      },
+      {
+        "row": 24825,
+        "confidence": 0.9971386194229126,
+        "text_preview": "Jack Frost 2, is probably the most cheesiest movie I have ever seen in my life. The complete title of the film, is Jack Frost 2: Revenge of the Mutant Killer Snowman. Horror movie fans that have a taste for campy story lines, will be delighted to watch this. This film was straight to video, and for …",
+        "source_index": 24825,
+        "token_length": 445,
+        "baseline_prediction": "NEGATIVE"
+      },
+      {
+        "row": 15431,
+        "confidence": 0.9969919919967651,
+        "text_preview": "The film had NO help at all, promotion-wise: if there was an advertising promo on TV or radio, I didn't see/hear it. The only newspaper ad I saw was on it's opening weekend: a dingy, sludgy B & W head-shot photo of Andy as Val-Com, behind jail bars, with headline: \"WANTED! Runaway Robot!\" ( which wa…",
+        "source_index": 15431,
+        "token_length": 1375,
+        "baseline_prediction": "NEGATIVE"
+      },
+      {
+        "row": 17942,
+        "confidence": 0.9969426989555359,
+        "text_preview": "Actually I'll admit I'm a political junkie, so this resonated with me, but the erratic nature of Ms. Green (yes I know what they did to her), but the ending was such a copout and totally inconsistent with the film itself. Why can't Barry L and crew just left us wondering what he was going to do? Let…",
+        "source_index": 17942,
+        "token_length": 210,
+        "baseline_prediction": "NEGATIVE"
+      }
+    ]
+  },
+  "files": {
+    "confusion_matrices": "/Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/outputs/reports/confusion_matrices.png",
+    "training_curves": "/Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/outputs/reports/training_curves.png",
+    "test_predictions": "/Users/phamquocbao/workspacing/E3_GROUP10/lab3_DL/outputs/reports/test_predictions.csv"
+  }
+}

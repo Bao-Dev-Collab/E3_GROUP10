@@ -1,0 +1,13 @@
+# Môi trường Python: tạo lại bằng `pip install -r requirements.txt`
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# File quá lớn cho GitHub (giới hạn 100 MB/file):
+# - checkpoint khi train (1,5 GB), chỉ dùng để chạy tiếp (--resume)
+# - model đã fine-tune (255 MB): tạo lại bằng `python src/02_train_finetune.py --stage train`
+outputs/checkpoints/
+outputs/final_model/
